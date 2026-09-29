@@ -1,0 +1,109 @@
+{
+  "extName": {
+    "message": "vkgrab — скачать видео из VK"
+  },
+  "extDescription": {
+    "message": "Скачивайте любое видео из VK и VK Видео в исходном качестве, вплоть до 4K, через вашу сессию."
+  },
+  "stateLoading": {
+    "message": "Ищу видео…"
+  },
+  "stateNotVkTitle": {
+    "message": "Откройте видео в VK"
+  },
+  "stateNotVkText": {
+    "message": "vkgrab работает на vk.com и vkvideo.ru. Откройте страницу с видео и нажмите на значок ещё раз."
+  },
+  "stateNoVideoTitle": {
+    "message": "На странице нет видео"
+  },
+  "stateNoVideoText": {
+    "message": "Откройте видео или страницу со ссылками на видео и попробуйте снова."
+  },
+  "stateErrorTitle": {
+    "message": "VK не отдал видео"
+  },
+  "errNoPlayer": {
+    "message": "VK не вернул плеер для этого видео. Возможно, оно приватное, удалено или вы не вошли в аккаунт."
+  },
+  "errHttp": {
+    "message": "VK ответил HTTP $ARG$",
+    "placeholders": {
+      "arg": {
+        "content": "$1"
+      }
+    }
+  },
+  "errNotJson": {
+    "message": "VK вернул не то, что ожидалось. Войдите в аккаунт VK и обновите вкладку."
+  },
+  "errDrm": {
+    "message": "поток зашифрован (DRM), сохранить его нельзя"
+  },
+  "errEmptyPlaylist": {
+    "message": "пустой плейлист"
+  },
+  "errLive": {
+    "message": "Прямые трансляции пока не поддерживаются. Дождитесь записи."
+  },
+  "errNoFormats": {
+    "message": "VK не отдал ни одного формата, который можно скачать."
+  },
+  "errReload": {
+    "message": "Обновите вкладку VK и попробуйте снова."
+  },
+  "qualities": {
+    "message": "Качество"
+  },
+  "hlsHint": {
+    "message": "качается во вкладке, не закрывайте её"
+  },
+  "downloadStarted": {
+    "message": "Загрузка началась: $ARG$",
+    "placeholders": {
+      "arg": {
+        "content": "$1"
+      }
+    }
+  },
+  "hlsStarted": {
+    "message": "Качаю во вкладке VK, не закрывайте её"
+  },
+  "otherVideos": {
+    "message": "Другие видео на странице"
+  },
+  "retry": {
+    "message": "Повторить"
+  },
+  "footer": {
+    "message": "Работает через вашу сессию VK. Только для личного использования."
+  },
+  "toastPreparing": {
+    "message": "подготовка…"
+  },
+  "toastCancel": {
+    "message": "Отмена"
+  },
+  "toastClose": {
+    "message": "Закрыть"
+  },
+  "toastDone": {
+    "message": "Готово · $ARG$",
+    "placeholders": {
+      "arg": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastCancelled": {
+    "message": "Отменено"
+  },
+  "toastError": {
+    "message": "Ошибка: $ARG$",
+    "placeholders": {
+      "arg": {
+        "content": "$1"
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+name: Release
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  attach-zip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm test && npm run check
+      - name: Tag matches manifest version
+        run: |
+          v=$(node -p "require('./extension/manifest.json').version")
+          test "v$v" = "${{ github.event.release.tag_name }}" || { echo "tag ${{ github.event.release.tag_name }} != manifest v$v"; exit 1; }
+      - run: npm run pack
+      - run: gh release upload "${{ github.event.release.tag_name }}" dist/*.zip --clobber
+        env:
+          GH_TOKEN: ${{ github.token }}

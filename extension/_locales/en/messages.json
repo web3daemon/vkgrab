@@ -1,0 +1,109 @@
+{
+  "extName": {
+    "message": "vkgrab — VK video downloader"
+  },
+  "extDescription": {
+    "message": "Download any video from VK and VK Video in original quality, up to 4K, using your own session."
+  },
+  "stateLoading": {
+    "message": "Looking for videos…"
+  },
+  "stateNotVkTitle": {
+    "message": "Open a VK video"
+  },
+  "stateNotVkText": {
+    "message": "vkgrab works on vk.com and vkvideo.ru. Open a video page and click the icon again."
+  },
+  "stateNoVideoTitle": {
+    "message": "No video on this page"
+  },
+  "stateNoVideoText": {
+    "message": "Open a video or a page with video links, then try again."
+  },
+  "stateErrorTitle": {
+    "message": "VK refused"
+  },
+  "errNoPlayer": {
+    "message": "VK did not return a player for this video. It may be private, deleted, or you are not signed in."
+  },
+  "errHttp": {
+    "message": "VK answered with HTTP $ARG$",
+    "placeholders": {
+      "arg": {
+        "content": "$1"
+      }
+    }
+  },
+  "errNotJson": {
+    "message": "VK returned an unexpected page — sign in to VK and reload the tab."
+  },
+  "errDrm": {
+    "message": "the stream is encrypted (DRM), it cannot be saved"
+  },
+  "errEmptyPlaylist": {
+    "message": "empty playlist"
+  },
+  "errLive": {
+    "message": "Live streams are not supported yet. Wait for the recording."
+  },
+  "errNoFormats": {
+    "message": "VK gave no downloadable formats for this video."
+  },
+  "errReload": {
+    "message": "Reload the VK tab and try again."
+  },
+  "qualities": {
+    "message": "Quality"
+  },
+  "hlsHint": {
+    "message": "downloads inside the tab, keep it open"
+  },
+  "downloadStarted": {
+    "message": "Download started: $ARG$",
+    "placeholders": {
+      "arg": {
+        "content": "$1"
+      }
+    }
+  },
+  "hlsStarted": {
+    "message": "Downloading in the VK tab, keep it open"
+  },
+  "otherVideos": {
+    "message": "Other videos on this page"
+  },
+  "retry": {
+    "message": "Retry"
+  },
+  "footer": {
+    "message": "Uses your VK session. For personal use only."
+  },
+  "toastPreparing": {
+    "message": "preparing…"
+  },
+  "toastCancel": {
+    "message": "Cancel"
+  },
+  "toastClose": {
+    "message": "Close"
+  },
+  "toastDone": {
+    "message": "Done · $ARG$",
+    "placeholders": {
+      "arg": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastCancelled": {
+    "message": "Cancelled"
+  },
+  "toastError": {
+    "message": "Error: $ARG$",
+    "placeholders": {
+      "arg": {
+        "content": "$1"
+      }
+    }
+  }
+}

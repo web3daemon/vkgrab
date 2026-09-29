@@ -1,0 +1,47 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_extName__",
+  "short_name": "vkgrab",
+  "description": "__MSG_extDescription__",
+  "version": "0.1.0",
+  "default_locale": "en",
+  "minimum_chrome_version": "110",
+  "homepage_url": "https://github.com/web3daemon/vkgrab",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "__MSG_extName__",
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png"
+    }
+  },
+  "permissions": ["downloads", "scripting", "storage"],
+  "host_permissions": [
+    "https://vk.com/*",
+    "https://*.vk.com/*",
+    "https://vk.ru/*",
+    "https://*.vk.ru/*",
+    "https://vkvideo.ru/*",
+    "https://*.vkvideo.ru/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://vk.com/*",
+        "https://*.vk.com/*",
+        "https://vk.ru/*",
+        "https://*.vk.ru/*",
+        "https://vkvideo.ru/*",
+        "https://*.vkvideo.ru/*"
+      ],
+      "js": ["lib/vk.js", "content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
