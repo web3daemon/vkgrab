@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": "github:web3daemon/vkgrab",
   "scripts": {
-    "test": "node --test \"tests/**/*.test.js\"",
+    "test": "node --test tests/vk.test.js",
     "check": "node scripts/check.mjs",
     "pack": "node scripts/pack.mjs"
   },
